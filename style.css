@@ -1,27 +1,59 @@
-header{
-    background:rgba(0, 0, 0, 0.7);
-    width: 100%;
-    position: fixed;
-    z-index: 100;
-}
 nav{
-    float: left;
+    max-width: cover;
+    margin: auto;
+   background-color: white; 
+    font-size: 20px;
+    margin-top: 5px;
 }
-nav ul{
+h1{
+    text-align: center;
+    background-color: white;
+    background-size: cover ;
+}
+body{
+    background-image: url(fondo.webp);
+    background-size: cover;
+    
+}
+.menuHorizontal{
     list-style:none;
-    overflow:hidden ;
+    display: flex;
+    justify-content: space-around;
+   
 }
-nav ul li{
-    float: left;
-    font-family:Arial, Helvetica, sans-serif;
-    font-size:20px ;
+.menuHorizontal > li > a{
+    display: block;
+    padding: 15px 20px;
+    color: black;
+    text-decoration: none;
+    
 }
-nav ul li a{
-    display:block ;
-    padding:20px ;
-    color:#fff ;
-    text-decoration:none ;
+.menuHorizontal>li:hover{
+    background-color: rgba(106, 106, 241, 0.301);
+    
+    
 }
-nav ul li:hover{
-    background:#eca023;
+.menuVertical{
+    position: absolute;
+    display: none;
+    list-style: none;
+    width: 200px;
+    background-color: rgba(0, 0, 0, .5);
+    
+}
+.menuHorizontal li:hover>.menuVertical{
+    display: block;
+    
+}
+.menuVertical li:hover{
+background-color: rgb(73, 73, 141);
+
+
+}
+.menuVertical li a{
+    display: block;
+    color:white;
+    padding: 15px 15px 15px 20px;
+    text-decoration: none;
+    
 }
